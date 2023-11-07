@@ -1,0 +1,172 @@
+body, h1, ul, a {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.img {
+    width: 50px;
+    height: 50px;
+    margin-left: -5px;
+}
+
+header {
+    width: 100%;
+    background-color:skyblue;
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    
+    display: flex;
+    
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+    margin: 0% 16px; 
+    /* font-size: 17px; */
+}
+
+.nav-links a:hover {
+    color: #FF5733;
+}
+
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.welcome{
+    position: fixed;
+    margin-top: 250px;
+    margin-left: 380px;
+    text-align: center;
+    padding: 15px;
+    color: black;
+    text-shadow: 1px 1px 2px lavender, 0 0 25px blue, 0 0 5px rgb(15, 229, 118);
+    font-size: xxx-large;
+}
+
+.img1{
+    width:200px;
+    height: 200px;
+    border:2px;
+    position:absolute;
+    margin-top: 30px;
+    margin-left: 550px;
+    
+}
+
+.section1{
+    text-align: center;
+    font-size: x-large;
+    color:#ff335f;
+}
+
+.img2{
+    margin-left: 130px;
+}
+.free{
+    text-align: center;
+    font-size: x-large;
+    color:blue;
+}
+.wings{
+    margin-left: 30px;
+}
+.wings  h1{
+    text-decoration: underline;
+  }
+.wings li{
+   position: static;
+    margin-left: 50px;
+    font-size: 19px;
+}
+.contact{
+    text-align: center;
+    font-size: xx-large;
+}
+.contact1{
+    font-size: 19px;
+}
+.contact1 a{
+    text-decoration: none;
+    color: blue;
+}
+#Team{
+    /* margin-left: 60px; */
+    background-image: url(img/ssvk.png);
+}
+/* #Team h1{
+    color: #a30e0e;
+    margin-left: 30px;
+} */
+#Team p{
+   color: #fff;
+   margin-left: 20px;
+}
+ #Team img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 40px;
+ }
+#Team nav{
+    text-align: center;
+}
+
+#Gallery h1{
+   text-align: center;
+   margin-top: 30px;
+}
+
+.image1 img{
+    width:1000px;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+
+#About h1{
+    text-align: center;
+}
+
+.space{ 
+    font-size: xx-large;
+    margin-left: 20px;
+
+}
+
+.about{
+    font-size: large;
+    margin-left: 50px;
+}
+
+.CopyRight{
+   
+    border: 3px solid white;
+    width: 1360px;
+    height: 100px;
+    margin-left:-30px;
+    text-align: center;
+    background-color: rgb(89, 36, 36);
+}
+
+footer{
+    margin-top: 30px ;
+    color: beige;
+}
