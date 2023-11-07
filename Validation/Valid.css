@@ -1,0 +1,27 @@
+.body {
+    border: 2px;
+    position: relative;
+}
+
+.border {
+    border: 3px;
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 13%;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+}
+
+.error {
+    color: rgb(242, 18, 18);
+    font-size: 17px;
+    margin-top: 5px;
+    text-align: right;
+}
+
+#background {
+    background: url(https://4.bp.blogspot.com/-0nnYybXDO0E/XC27n2R7AMI/AAAAAAAACoQ/ueTzwqOI4xkzKR-02gFVTAT9JjhRnMD1gCLcBGAs/s1600/best%2Bbackground%2Bimages%2B5.jpg);
+}      
