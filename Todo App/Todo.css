@@ -12,7 +12,7 @@ h1 {
     color: #b00b0b;
 }
 
-input[type="text"] {
+input[type="text"]{
     width: 70%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -21,6 +21,7 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
+    margin-top: 10px;
     background-color: #333;
     color: #fff;
     border: none;
@@ -31,6 +32,7 @@ button {
 ul {
     list-style-type: none;
     padding: 0;
+    
 }
 
 li {
@@ -41,7 +43,18 @@ li {
     border-bottom: 1px solid #ccc;
 }
 
-li .delete {
+.delete{
+    color: red;
+    cursor: pointer;
+    margin-left: 160px;
+}
+.edit{
     color: red;
     cursor: pointer;
 }
+
+.date-value{
+    text-align: left;
+    color: slategrey;
+}
+
