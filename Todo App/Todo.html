@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
     <link rel="stylesheet" type="text/css" href="Todo.css">
+    <script src="Todo.js"></script>
 </head>
 <body>
     <div class="container">
         <h1>My To-Do List</h1>
+        <label><b>Task</b></label><br>
         <input type="text" id="taskInput" placeholder="Add a new task">
-        <input type="date" id="date" class="Date">
+        <label><b>Date</b></label><br>
+        <input type="datetime-local" id="date" class="Date">
+        <label><b>Status</b></label><br>
+        <select id="status">
+            <option value="notStarted">Not Started</option>
+            <option value="started">Started</option>
+            <option value="completed">Completed</option>
+        </select><br><br>
         <button id="addTask">Add</button>
         <ul id="taskList"></ul>
+     
+        <table id="taskList">
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Delete</th>
+                    <th>Edit</th>
+                    <th>Save</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+              
+            </tbody>
+        </table>
     </div>
-    <script src="Tpdo.js"></script>
 </body>
 </html>
 
