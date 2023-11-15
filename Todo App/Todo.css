@@ -14,7 +14,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: 600px;
+    width: 1000px;
     text-align: center;
 }
 
@@ -27,11 +27,42 @@ label {
     margin-right: 600px;
 }
 
-input, select, button {
+input,
+select {
     margin-bottom: 15px;
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+}
+
+#addTask {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 8px;
+    
+
+}
+
+ .actions button {
+    /* position: absolute; */
+    bottom:40px;
+    border: hidden;
+    background-color: white;
+    color: red;
+    align-items: center;
+    font-size: 15px;
+    
+
+} 
+
+
+.delete,.edit,
+.save {
+    cursor: pointer;
+}
+.delete:hover, .edit:hover, .save:hover {
+    text-decoration: underline;
+   
 }
 
 table {
@@ -40,24 +71,16 @@ table {
     margin-top: 20px;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
+    
 }
 
 th {
     background-color: #f2f2f2;
-}
-
-.delete, .edit, .save {
-    cursor: pointer;
-    color: #e44d26;
-    margin-left: 10px;
-}
-
-.delete:hover, .edit:hover, .save:hover {
-    text-decoration: underline;
 }
 
 #currentTime {

@@ -15,36 +15,43 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        if (taskText !== "") {
-            const tr = document.createElement("tr");
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${taskText}</td>
+            <td>${taskDate}</td>
+            <td class="status-value">${status}</td>
+            <td class="actions">
+                <button class="delete">Delete</button>
+                <button class="edit">Edit</button>
+                <button class="save">Save</button>
+            </td>`;
 
-            tr.innerHTML = `
-                <td>${taskText}</td>
-                <td>${taskDate}</td>
-                <td class="status-value">${status}</td>
-                <td class="delete">Delete</td>
-                <td class="edit">Edit</td>
-                <td class="save">Save</td>`;
-              
-            taskTableBody.appendChild(tr);
+        taskTableBody.appendChild(tr);
+        taskInput.value = "";
+
+        const deleteButton = tr.querySelector(".delete");
+        const editButton = tr.querySelector(".edit");
+        const saveButton = tr.querySelector(".save");
+        const statusCell = tr.querySelector(".status-value");
+
+        deleteButton.addEventListener("click", function () {
+            taskTableBody.removeChild(tr);
+        });
+
+        editButton.addEventListener("click", function () {
+            taskInput.value = tr.cells[0].textContent;
+            statusSelect.value = statusCell.textContent;
+            editButton.style.display = "none";
+            saveButton.style.display = "inline-block";
+        });
+
+        saveButton.addEventListener("click", function () {
+            tr.cells[0].textContent = taskInput.value;
+            statusCell.textContent = statusSelect.value;
             taskInput.value = "";
-
-            tr.querySelector(".delete").addEventListener("click", function () {
-                taskTableBody.removeChild(tr);
-            });
-
-            tr.querySelector(".edit").addEventListener("click", function () {
-                const editInput = document.createElement("input");
-                editInput.type = "text";
-                editInput.value = tr.firstElementChild.textContent;
-              
-                tr.firstElementChild.replaceWith(editInput);
-            });
-
-            tr.querySelector(".save").addEventListener("click", function () {
-                const editedText = tr.querySelector("input").value.trim();
-                tr.firstElementChild.replaceWith(document.createTextNode(editedText));
-            });
-        }
+            editButton.style.display = "inline-block";
+            saveButton.style.display = "none";
+        });
     });
 });
+
