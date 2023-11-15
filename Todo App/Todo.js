@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <td class="actions">
                 <button class="delete">Delete</button>
                 <button class="edit">Edit</button>
-                <button class="save">Save</button>
+                <button class="save" style="display:none;">Save</button>
             </td>`;
 
         taskTableBody.appendChild(tr);
@@ -54,4 +54,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
